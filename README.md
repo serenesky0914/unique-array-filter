@@ -12,8 +12,8 @@ const arr7 = ["b", "c", "e"];
 const arr8 = ["b", "e", "c"];
 
 const intersection = (...arrays) => {
-  (data = [...arrays]),
-    (result = data.reduce((a, b) => a.filter((c) => b.includes(c))));
+  var data = [...arrays];
+  var result = data.reduce((a, b) => a.filter((c) => b.includes(c)));
   return [...new Set(result)];
 };
 
